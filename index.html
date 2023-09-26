@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Challenge 1</title>
+</head>
+<body>
+     <div class="container p-2 mt-5">
+    <div class="header">
+        <h2>List Of Books</h2>
+        <button type="button" class="btn btn-success" id="addButton">Add book</button>
+
+    </div>
+
+    <table id="bookTable" class="table table-striped table-hover">
+        <thead>
+          <tr>
+          
+            <th scope="col">Name</th>
+            <th scope="col">author</th>
+            <th scope="col">Price</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+         
+        </tbody>
+      </table>
+      <form id="editForm" style="display: none;" class="mt-5">
+        <h2 class="mb-3"> Edit Book informations</h2>
+        <div class="mb-3">
+            <label for="editName" class="form-label">Edit Name:</label>
+            <input type="text" id="editName" name="editName" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="editAuthor" class="form-label">Edit Author:</label>
+            <input type="text" id="editAuthor" name="editAuthor" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="editPrice" class="form-label">Edit Price:</label>
+            <input type="text" id="editPrice" name="editPrice" class="form-control">
+        </div>
+        <button id="updateButton" class="btn btn-success">Update</button>
+        <button id="cancelButton" class="btn btn-danger">Cancel</button>
+    </form>
+      <!-- table of adding new book-->
+      <form id="addForm" style="display: none;" class="mt-5">
+        <h2 class="mb-3">Add Book Information</h2>
+        <div class="mb-3">
+            <label for="addName" class="form-label">Name:</label>
+            <input type="text" id="addName" name="addName" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="addAuthor" class="form-label">Author:</label>
+            <input type="text" id="addAuthor" name="addAuthor" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="addPrice" class="form-label">Price:</label>
+            <input type="text" id="addPrice" name="addPrice" class="form-control">
+        </div>
+        <button id="addBookButton" class="btn btn-success">Add Book</button>
+        <button id="cancelAddButton" class="btn btn-danger">Cancel</button>
+    </form>
+
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
