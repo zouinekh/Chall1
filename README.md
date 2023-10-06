@@ -1,2 +1,2 @@
 # Chall1
-Book challenge HTML/CSS/JS
+Book challenge HTML/CSS/JS IN 1H
